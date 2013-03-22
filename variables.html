@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script>
+function CheckVariables()
+{
+if ((checkbox.checked == true) && (checkbox2.checked == true)&& (checkbox3.checked == false) && (checkbox4.checked == false) && (checkbox5.checked == false) && (checkbox6.checked == false) && (checkbox7.checked == false) && (checkbox8.checked == true)&& (checkbox9.checked == true)&& (checkbox10.checked == true)){
+alert("Well done you got them right");
+}
+else{
+alert("WHOOPS! You got some wrong.\n\n\nYou should have the following variables ticked for Making Toast:\n\nNumber of slices of bread\nTemperature of the toaster\n\nFor The Baked Beans\n\nQuantity of baked beans\nTemeprature of the baked beans\nTemperature of the source of heat\n\n\nIf you are not sure why you got them wrong ask a mentor.");
+}
+}
+</script>
+<style type="text/css">
+<!--
+.style1 {font-family: Arial, Helvetica, sans-serif}
+.style2 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+-->
+</style>
+</head>
+
+<body>
+<h1 class="style1">Variables</h1>
+<p class="style1">These  can be assigned a  value and used throughout the program.</p>
+<p class="style1"> Their values can be modified as the program progresses or remain static.</p>
+<p class="style1">&nbsp;</p>
+<h2 class="style1">Types Of Variable</h2>
+<p class="style1">Variables are defined using either  text or numbers or a combination of both. </p>
+<p class="style1"><strong>String</strong> - Contains text or a combination of text and numbers (alphanumeric).</p>
+<p class="style1"><strong>Integer</strong> - A variable assigned a number<br />
+</p>
+<p class="style1">Variables can be global or local.</p>
+<p class="style1"><strong>Global variables</strong> can be used right across all processes.<br />
+    <strong>Local variables</strong> are used within the process they are defined in. </p>
+<p class="style1">&nbsp;</p>
+<span class="style1"><strong>In Scratch:</strong></span>
+<p class="style1">A global variable is one that can be used by all sprites.<br />
+  A local variable is only used by the sprite it is defined in.</p>
+<p class="style1">&nbsp;</p>
+<h2 class="style1">Naming Variables </h2>
+<p class="style1">The name of a variable can only contain  can contain  letters, or a combination of letters and numbers and  underscores ( _ ) .</p>
+<p class="style1">It is important that when you name your variables that you give them names associated with what they are defining. This makes it easier to understand your code. </p>
+<p class="style2">Example </p>
+<p class="style1">Temperature of baked beans could be written as:</p>
+<p class="style2">var a;</p>
+<p class="style1">but that doesn't really mean a lot.</p>
+<p class="style1">so we could write it like this:</p>
+<p class="style2">var TempBakedBeans;</p>
+<p class="style1">now you now what it means.</p>
+<p class="style1">&nbsp; </p>
+<h2 class="style1">Naming Convention</h2>
+<p class="style1">There are several conventions, but the two you should be familiar with are these:</p>
+<p class="style1">1 - First letter of each separate word  that make up the variable name are capital letters.<br />
+2 - First letter of each separate word  is a capital letter with an underscore (_) placed in between each word to join them together. </p>
+<p class="style1"><strong>Example</strong><br />
+variable my name could be written as: </p>
+<p class="style1">var MyName;</p>
+<p class="style1">or</p>
+<p class="style1">var My_Name; </p>
+<p class="style1">&nbsp;</p>
+<h2 class="style1">Using Variables In Code:</h2>
+<p class="style1">When using variables we must  define them before they can be used in the program. </p>
+<p class="style1">Normally you define them at the beginning of the code you are writing. </p>
+<p class="style2">Example:</p>
+<p class="style1">var BreadSlices = 2;<br />
+  var TemperatureOfToast_c = 150; <br />
+  var QuantityBeans_ml = 80; </p>
+<h2 class="style1">Defining A Variable </h2>
+<p class="style1">When defining integer variables, you just write the number after the = sign and then a semicolon (;) after the value.</p>
+<p class="style1">When defining a string variable, the text must be enclosed with an apostrophe before and after the value and then a semicolon (;) at the end.</p>
+<p class="style2">Example;</p>
+<p class="style1">An age can be defined as; </p>
+<p class="style1">var MyAge = 21;</p>
+<p class="style1">var MyAge = 'Twenty One';  </p>
+<h2 class="style1"><br />
+<strong>In the case of baked beans on toast, the variables are:</strong></h2>
+<p class="style1">Number of slices of bread<br />
+  Temperature of the toaster<br />
+  Quantity of baked beans to be heated<br />
+  Temperature of the baked beans<br />
+  Temperature of the source of heat<br />
+  <br />
+  <br />
+If we have two separate processes; Making the toast and heating the baked beans tick the relevant variables for each process below:</p>
+<table width="100%%" border="0" cellspacing="2" cellpadding="4">
+  <tr>
+    <td class="style1"><h3>Making the Toast </h3></td>
+    <td class="style1"><h3>Heating The Baked Beans </h3></td>
+  </tr>
+  <tr>
+    <td class="style1"><p>
+      <input type="checkbox" name="checkbox" id="checkbox" value="1" />
+      Number of slices of bread<br />
+      <input type="checkbox" name="checkbox2" id="checkbox2"  value="1" />
+      Temperature of the toaster<br />
+      <input type="checkbox" name="checkbox3" id="checkbox3"  value="0" />
+      Quantity of baked beans to be heated<br />
+      <input type="checkbox" name="checkbox4" id="checkbox4"  value="0" />
+      Temperature of the baked beans<br />
+      <input type="checkbox" name="checkbox5" id="checkbox5" value="0" />
+      Temperature of the source of heat<br />
+    </p>    </td>
+    <td class="style1"><input type="checkbox" name="checkbox6" id="checkbox6"  value="0" />
+Number of slices of bread<br />
+<input type="checkbox" name="checkbox7" id="checkbox7" value="0" />
+Temperature of the toaster<br />
+<input type="checkbox" name="checkbox8" id="checkbox8" value="1" />
+Quantity of baked beans to be heated<br />
+<input type="checkbox" name="checkbox9" id="checkbox9" value="1" />
+Temperature of the baked beans<br />
+<input type="checkbox" name="checkbox10" id="checkbox10" value="1" />
+Temperature of the source of heat</td>
+  </tr>
+</table>
+<span class="style1">
+<input type="button" onclick="CheckVariables()" value="More">
+</span>
+<p class="style1">&nbsp;</p>
+<h3 class="style1">&nbsp;</h3>
+<p class="style1">&nbsp;</p>
+<p class="style1">&nbsp;</p>
+<h3 class="style1">&nbsp;</h3>
+<p class="style1">&nbsp; </p>
+</body>
+</html>

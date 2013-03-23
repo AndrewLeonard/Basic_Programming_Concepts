@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {font-family: Arial, Helvetica, sans-serif}
+.style2 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+-->
+</style>
+</head>
+
+<body>
+<h1 class="style1">Conditional  Statements</h1>
+<p class="style1">These are statements that begin with <strong>if</strong> and are used to compare variables or request an input from the  keyboard or mouse.</p>
+<p class="style1"> There can only be two results for a conditional statement &ndash;  <strong>True</strong> or <strong>False</strong>.</p>
+<p class="style1"> If the result is true then something will happen. If it is  false, nothing will happen.</p>
+<p class="style1"><strong>Example:</strong><br />
+  You are a passenger in a car driving down the road and you come  to a roundabout. The driver of the car has forgotten where they are going, so  the driver just keeps going round and round the roundabout (an iteration/loop).<br />
+  <br />
+  Luckily you know where you are going &ndash; Armagh.<br />
+  <br />
+Each exit from the roundabout has a sign saying where the  road leads to.<br />
+<br />
+  The first sign says &ldquo;Newry&rdquo; (false) so you ignore it.<br />
+  <br />
+  The second sign says &ldquo;Portadown&rdquo; (false) so you ignore it.<br />
+  <br />
+  The third sign says &ldquo;Armagh&rdquo; (true) so you tell the driver  to exit the roundabout (the loop) via this road.</p>
+<p class="style1">Now you continue with your journey (the rest of the  program).</p>
+<p class="style1">&nbsp;</p>
+<h2 class="style2">Basic if Statement </h2>
+<p class="style1"><br />
+  if (conditional statement) {<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Statement block;<br />
+  }</p>
+<p class="style1"><strong>Code for the above  roundabout example</strong><br />
+  </p>
+<p class="style1">function (roundabout){</p>
+<blockquote class="style1">
+  <p> var Sign;<br />
+  var Destination=&rdquo;Armagh&rdquo;;</p>
+  <blockquote>
+    <p>    <strong>if</strong> (Sign==Destination)  { // True<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write(&ldquo;This is the  correct sign, leave the roundabout at this exit);<br />
+      &nbsp;}</p>
+  </blockquote>
+  <p><br />
+    }</p>
+</blockquote>
+<p class="style1">&nbsp;</p>
+<h2 class="style1"><strong>else if statement</strong></h2>
+  <p class="style1">Sometimes you want to use a number of if statements after  one another to provide outputs, to do this you can use an <strong>else if</strong> statement.<br />
+  The else if statement is written like this:</p>
+  <h3 class="style1">else if</h3>
+  <span class="style1"> if (conditional statement) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Statement block;<br />
+}<br />
+else if (conditional statement) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Statement block;<br />
+}  </span>
+<p class="style1">Take the roundabout example above.<br />
+  <br />
+  Whilst going round and round the roundabout, you looked at  each sign and read the destination on it and decided if it matched where you  were going.<br />
+  </p>
+<p class="style1">You could write the code like this:</p>
+<p class="style1">function (roundabout){</p>
+<blockquote class="style1">
+  <p>  var Sign;<br />
+    var Destination=&rdquo;Armagh&rdquo;;</p>
+  <blockquote>
+    <p> <strong>if</strong> (Sign==Destination)  { // True<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write(&ldquo;This is the  correct sign, leave the roundabout at this exit);<br />
+      &nbsp;}<br />
+      <strong>else if</strong> (Sign==&rdquo;Portadown&rdquo;)  { // True<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write(&ldquo;This is not  the correct sign, this road leads to Portadown);<br />
+      &nbsp;}<br />
+      <strong>else if </strong>(Sign==&rdquo;Newry&rdquo;)  { True<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write(&ldquo;This is not  the correct sign, this road leads to Newry);<br />
+      &nbsp;}</p>
+  </blockquote>
+</blockquote>
+<p class="style1"> }</p>
+<p class="style1">&nbsp;</p>
+<h3 class="style1"><strong>else statement</strong></h3>
+<p class="style1">  This catches any results that are false.</p>
+<p class="style1"><br />
+  It is written like this:</p>
+<p class="style1">if (conditional statement) {<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Statement block;<br />
+  }<br />
+  else {<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Statement block;<br />
+  }</p>
+<p class="style1">Let&rsquo;s take the roundabout example above. Instead of an elseif  statement for each sign we could just say this not your exit.</p>
+<p class="style1"><br />
+  function (roundabout){<br />var Sign;<br />
+  var Destination=&rdquo;Armagh&rdquo;;</p>
+<blockquote class="style1">
+  <p><strong>if </strong>(Sign==Destination) {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write(&ldquo;This is the  correct sign, leave the roundabout at this exit);<br />
+    &nbsp;}<br />
+    <strong>else</strong> {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write(&ldquo;This is not  the correct sign for your destination, do not &nbsp;leave the roundabout);</p>
+  <p>&nbsp;} </p>
+</blockquote>
+<p class="style1">}</p>
+</body>
+</html>
